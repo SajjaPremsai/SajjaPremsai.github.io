@@ -1,0 +1,16 @@
+.CCard-Container{
+    width: 45%;
+    padding: 20px;
+}
+
+
+.card-header{
+    font-size: 20px;
+    padding: 10px;
+    color: #EC4D37;
+    font-weight: 500;
+}
+
+.card-footer{
+    padding: 10px;
+}

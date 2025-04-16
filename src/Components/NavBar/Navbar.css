@@ -1,0 +1,59 @@
+.Nav-Bar{
+    height: 2.6rem;
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: red; */
+}
+
+.Nav-header{
+    font-size: 28px;
+    padding: 20px;
+}
+
+.Nav-title{
+    text-decoration: none;
+}
+
+.Items{
+    color: #ffff;
+    list-style-type: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.All-Items{
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-end;
+    gap: 40px;
+    font-size: 20px;
+    padding: 25px;
+}
+
+
+@media (max-width: 900px) {
+    .Items{
+        display: none;
+    }
+    .Nav-header{
+        display:none;
+    }
+}
+
+
+.Nav-Bar {
+  animation: transitionIn 0.75s ease;
+}
+
+@keyframes transitionIn {
+  0% {
+      transform: translateY(-50%);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}

@@ -1,0 +1,98 @@
+.Contactme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    padding: 5%;
+}
+
+.contact-Header {
+    color: #EC4D37;
+    font-size: 5vw;
+    margin-bottom: 5vw;
+
+}
+
+.Contact-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Contact-data {
+    text-align: center;
+    margin-bottom: 5vw;
+}
+
+.Contact-icon {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.Contact-icon svg {
+    fill: #EC4D37;
+    width: 5vw;
+    height: 5vw;
+}
+
+.Contact-icon .icon1:hover svg {
+    fill: #ffff;
+}
+
+.Contact-icon .icon2:hover svg {
+    fill: #ffff;
+}
+
+.Contact-icon .icon3:hover svg {
+    fill: #ffff;
+}
+.Contact-Form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    background-color: #EC4D37;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #D0432E;
+}
+
+.Form-header {
+    text-align: center;
+    color: #EC4D37;
+    font-size: 4vw;
+}
+
+.Contact-para {
+    color: #ffff;
+    padding: 5vw;
+    font-size: 3vw;
+    white-space: pre-line;
+}
+
+@media (max-width: 768px) {
+    .contact-Header {
+        font-size: 7vw;
+        margin-bottom: 7vw;
+    }
+
+    .Contact-para {
+        padding: 10vw;
+        font-size: 5vw;
+    }
+}

@@ -1,0 +1,75 @@
+.About {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    padding: 10%;
+    text-align: center;
+}
+
+.About-Header {
+    color: #EC4D37;
+    font-size: 90px;
+    margin-bottom: 90px;
+}
+
+.About-Des {
+    width: 80%;
+    padding: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.Title {
+    padding: 10px;
+    color: #EC4D37;
+    font-size: 50px;
+}
+
+.Education-data{
+    color: black;
+}
+
+h3{
+    padding-top: 0.25rem;
+}
+
+.vertical-timeline-element-content{
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.1) !important;
+    padding: 2em 3em !important;
+}
+
+.vertical-timeline-element-title{
+    color:#EC4D37;
+}
+
+.date{
+    color:#EC4D37;
+}
+
+#description{
+    margin : 1.5em 0 2em 0;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 3s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+@media (max-width: 1170px) {
+    .vertical-timeline-element-date {
+        display: block !important;
+        float: none !important;
+        color: black;
+        margin-top: 1.5em;
+    }
+}

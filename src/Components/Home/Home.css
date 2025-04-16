@@ -1,0 +1,58 @@
+.home{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    padding: 10%;
+}
+
+.Description{
+    width: 70%; 
+    height: auto;
+}
+
+.Header{
+    font-size: 38px;
+    padding: 10px;
+}
+
+.Des{
+    font-size: 26px;
+    padding: 20px;
+}
+
+.Image{
+    padding-bottom: 50px;
+}
+
+@media (max-width: 900px) {
+    .home {
+        flex-direction: column; 
+    }
+
+    .Description {
+        width: 100%; 
+    }
+
+    .Header{
+        font-size: 24px;
+    }
+
+    .Des{
+        font-size: 16px;
+    }
+}
+
+.home {
+    animation: transitionIn 1s ease;
+}
+
+@keyframes transitionIn {
+    0% {
+        transform: translateY(-10%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
