@@ -6,7 +6,7 @@ const Footer = () => {
         <footer className="bg-dark text-center text-white py-3 footers">
             <div className="container">
                 <div>
-                    &copy; {new Date().getFullYear()} Code_Demon__
+                    &copy; {new Date().getFullYear()} <span><span style={{ color: "#EC4D37" }}>P</span>rem Sai.</span>
                 </div>
             </div>
         </footer>
