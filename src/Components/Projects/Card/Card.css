@@ -1,16 +1,85 @@
-.CCard-Container{
+.CCard-Container {
     width: 45%;
+    padding: 20px;
+    display: inline-block;
+    vertical-align: top;
+    transition: transform 0.3s ease;
+}
+
+.project-card {
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.6);
+}
+
+.card-header {
+    font-size: 22px;
+    padding: 15px;
+    color: #EC4D37;
+    font-weight: 600;
+    background: transparent;
+    text-align: center;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
 }
 
-
-.card-header{
-    font-size: 20px;
-    padding: 10px;
-    color: #EC4D37;
-    font-weight: 500;
+.card-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
 }
 
-.card-footer{
+.button-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.live-demo-button, .github-button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    color: #fff;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.live-demo-button {
+    background: linear-gradient(90deg, #EC4D37, #FF6B4A);
+}
+
+.live-demo-button:hover {
+    background: linear-gradient(90deg, #FF6B4A, #EC4D37);
+    transform: scale(1.05);
+}
+
+.github-button {
+    background: #24292F;
+}
+
+.github-button:hover {
+    background: #3b4045;
+    transform: scale(1.05);
+}
+
+.card-footer {
     padding: 10px;
+    text-align: center;
+    color: #ccc;
+    background: transparent;
+    font-size: 14px;
 }

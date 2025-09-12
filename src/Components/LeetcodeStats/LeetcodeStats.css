@@ -1,0 +1,195 @@
+.leetcode-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+/* Circle Container */
+.circle-wrapper {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.circle-wrapper:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(236, 77, 55, 0.7);
+}
+
+/* SVG Circles */
+.circle-svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.circle-base {
+  fill: none;
+  stroke: #333;
+  stroke-width: 6;
+}
+
+.circle-progress {
+  fill: none;
+  stroke: #ec4d37;
+  stroke-width: 6;
+  stroke-linecap: round;
+  transition: stroke-dasharray 1s ease-in-out;
+}
+
+/* Hover Texts */
+.hover-text {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.4s ease;
+}
+
+.hover-text.active {
+  opacity: 1;
+}
+
+.hover-big {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ec4d37;
+}
+
+.hover-small {
+  font-size: 16px;
+  color: #999;
+}
+
+
+.leetcode-Header {
+  color: #EC4D37;
+  font-size: 5vw;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5vw;
+}
+
+.leetcode-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.hover-label {
+  display: block;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Difficulty Stats */
+.difficulty-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.diff-box {
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  font-weight: 500;
+  transition: transform 0.3s;
+}
+
+.diff-box:hover {
+  transform: scale(1.05);
+}
+
+.easy {
+  color: #21c55d;
+  background: rgba(33, 197, 93, 0.1);
+}
+
+.medium {
+  color: #facc15;
+  background: rgba(250, 204, 21, 0.1);
+}
+
+.hard {
+  color: #ef4444;
+  background: rgba(239, 68, 68, 0.1);
+}
+
+/* Loading Spinner */
+.loading-spinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+  color: #ec4d37;
+  font-weight: bold;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #ec4d37;
+  border-top: 5px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Card Container */
+.leetcode-card {
+  background: black;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+  margin: 3rem auto;
+  max-width: 800px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.leetcode-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Header */
+.leetcode-Header {
+  color: #EC4D37;
+  font-size: 4vw;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* Content Layout */
+.leetcode-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* Difficulty Stats */
+.difficulty-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+

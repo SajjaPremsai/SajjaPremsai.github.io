@@ -70,7 +70,7 @@ export default function ContactMe() {
           </p>
           <div className="Contact-icon">
             <span class="icon1">
-              <a href="mailto:sajjapremsai8938@gmail.com" target="_blank" rel="noreferrer">
+              <a href="mailto:sajjapremsai.in@gmail.com" target="_blank" rel="noreferrer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="30"
@@ -100,7 +100,7 @@ export default function ContactMe() {
               </a>
             </span>
             <span className='icon3'>
-              <a href="https://www.linkedin.com/in/prem-sai-097a95251" target="_blank" rel="noreferrer">
+              <a href="https://www.linkedin.com/in/sajjapremsai" target="_blank" rel="noreferrer">
               <svg
               
                 xmlns="http://www.w3.org/2000/svg"

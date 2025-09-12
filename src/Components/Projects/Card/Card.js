@@ -1,20 +1,39 @@
-import React from 'react'
-import '@coreui/coreui/dist/css/coreui.min.css'
-import "./Card.css"
-import { CCard , CCardHeader , CCardBody  , CCardText , CButton , CCardFooter} from '@coreui/react' 
+import React from 'react';
+import '@coreui/coreui/dist/css/coreui.min.css';
+import "./Card.css";
+import { CCard, CCardHeader, CCardBody, CCardText, CCardFooter, CButton } from '@coreui/react';
+import { FaGithub } from 'react-icons/fa';
 
-
-export default function Card({element}) {
+export default function Card({ element }) {
   return (
     <div className='CCard-Container'>
-      <CCard className="text-center">
-        <CCardHeader style={{ color:"#EC4D37"}}>{element.title}</CCardHeader>
-        <CCardBody>
-          <img src={element.image} width={100} height={100} alt='Certificate' />
-          <CCardText>{element.description}</CCardText>
-          <CButton href={element.link} target='_blank' style={{ backgroundColor: "#EC4D37", borderColor: "#EC4D37" ,  fontSize : "18px"}}>Live Demo</CButton>
+      <CCard className="project-card">
+        <CCardHeader className="card-header">{element.title}</CCardHeader>
+        <CCardBody className="card-body">
+          <CCardText className="card-text">{element.description}</CCardText>
+          <div className="button-group">
+            {element.link && (
+              <CButton 
+                href={element.link} 
+                target='_blank' 
+                className="live-demo-button"
+              >
+                Live Demo
+              </CButton>
+            )}
+            {element.github && (
+              <CButton 
+                href={element.github} 
+                target='_blank' 
+                className="github-button"
+              >
+                <FaGithub size={18} style={{ marginRight: "8px" }} />
+                GitHub
+              </CButton>
+            )}
+          </div>
         </CCardBody>
-        <CCardFooter className="text-medium-emphasis">
+        <CCardFooter className="card-footer">
           {element.deployed}
         </CCardFooter>
       </CCard>
