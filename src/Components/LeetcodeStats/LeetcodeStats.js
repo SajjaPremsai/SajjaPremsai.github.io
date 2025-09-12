@@ -6,6 +6,7 @@ const LeetcodeStats = () => {
   const [loading, setLoading] = useState(true);
   const [hoverIndex, setHoverIndex] = useState(0);
 
+  // Fetch LeetCode stats
   useEffect(() => {
     const fetchStats = async () => {
       try {
@@ -23,7 +24,21 @@ const LeetcodeStats = () => {
     fetchStats();
   }, []);
 
+
+  const hoverStates = stats
+    ? [
+        { big: `${stats.totalSolved}`, small: `/${stats.totalQuestions}`, label: "Solved" },
+        { big: `${stats.acceptanceRate}`, small: "%", label: "Acceptance" },
+        { big: "90", small: ".82%", label: "Beats" },
+        { big: "91", small: ".96%", label: "Beats" },
+        { big: "74", small: ".11%", label: "Beats" },
+      ]
+    : [];
+
+  
   useEffect(() => {
+    if (!hoverStates.length) return;
+
     let interval;
     if (hoverIndex !== 0) {
       interval = setInterval(() => {
@@ -31,7 +46,7 @@ const LeetcodeStats = () => {
       }, 2000);
     }
     return () => clearInterval(interval);
-  }, [hoverIndex]);
+  }, [hoverIndex, hoverStates.length]);
 
   if (loading) {
     return (
@@ -45,14 +60,6 @@ const LeetcodeStats = () => {
   if (!stats) return <p>Failed to load stats.</p>;
 
   const solvedPercent = (stats.totalSolved / stats.totalQuestions) * 100;
-
-  const hoverStates = [
-    { big: `${stats.totalSolved}`, small: `/${stats.totalQuestions}`, label: "Solved" },
-    { big: `${stats.acceptanceRate}`, small: "%", label: "Acceptance" },
-    { big: "90", small: ".82%", label: "Beats" },
-    { big: "91", small: ".96%", label: "Beats" },
-    { big: "74", small: ".11%", label: "Beats" },
-  ];
 
   return (
     <div className="leetcode-card">
