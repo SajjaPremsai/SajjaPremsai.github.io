@@ -11,6 +11,24 @@ export default function Card({ element }) {
         <CCardHeader className="card-header">{element.title}</CCardHeader>
         <CCardBody className="card-body">
           <CCardText className="card-text">{element.description}</CCardText>
+          {element.contributors && element.contributors.length > 0 && (
+            <div className="contributors-row">
+              <span className="contributors-label">Other contributors</span>
+              <div className="contributors-list">
+                {element.contributors.map((contributor, index) => (
+                  <a
+                    key={index}
+                    href={contributor.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="contributor-link"
+                  >
+                    <img src={contributor.image} alt={contributor.name} className="contributor-avatar" />
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
           <div className="button-group">
             {element.link && (
               <CButton 

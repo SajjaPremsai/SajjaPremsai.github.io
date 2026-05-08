@@ -1,75 +1,79 @@
 const projects = [
   {
     id: 1,
-    title: "The Weather Forecast Application",
-    description: "Built a responsive React application integrating a third-party weather API using Axios. Implemented hooks for state management and asynchronous data fetching, with features like temperature, humidity, wind speed, and condition tracking.",
-    link: "https://weather-8938.web.app/",
+    title: "Doc.ai - Automate Your Documentation with AI",
+    description: "Built a GitHub App that automates documentation work by analyzing code changes, generating README updates and inline comments, then opening PRs with the suggested docs. This helps engineering teams keep repos documented without manual overhead.",
+    link: "https://docai-seven.vercel.app/",
     github: null,
-    deployed: "Deployed on 21st July 2023",
-    tags: ["Axios", "React", "Hooks", "Node.js"]
+    deployed: "Sep 2025 – Nov 2025",
+    tags: ["Artificial Intelligence", "GitHub", "Python", "Flask"]
   },
   {
     id: 2,
-    title: "React Redux Todo Application",
-    description: "Developed a task management system leveraging Redux for state management and React hooks for UI updates. Implemented task filtering, CRUD operations, and optimized re-rendering for seamless user experience.",
-    link: "https://mytodo-8938.web.app/",
+    title: "Drowsiness Detection using CNN",
+    description: "Developed a real-time fatigue detection model using Inception V3 and OpenCV to identify open and closed eye states. The system evaluates eye scores continuously and flags drowsiness instantly for driver safety applications.",
+    link: null,
     github: null,
-    deployed: "Deployed on 4th September 2023",
-    tags: ["Redux", "React", "Hooks", "Node.js"]
+    deployed: "2024",
+    tags: ["Deep Learning", "TensorFlow", "OpenCV", "Computer Vision"],
+    contributors: [
+      {
+        name: "Contributor 1",
+        link: "https://www.linkedin.com/in/mohansai-betha/",
+        image: "https://media.licdn.com/dms/image/v2/D5603AQEC2bqvKnJTlw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1726759930908?e=1779926400&v=beta&t=yVqEt4quQ5esdZLVGGewCtGggDbEMT2vyJtqK37v75s"
+      },
+      {
+        name: "Contributor 2",
+        link: "https://www.linkedin.com/in/lokesh-koyya-658987284/",
+        image: "https://media.licdn.com/dms/image/v2/D4E03AQGsR0VxVpg6uA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1707234944555?e=1779926400&v=beta&t=PHG7WfZ_AooRaEBkdTQGWjt813Fz1r58getN4hOUCsY"
+      }
+    ]
   },
   {
     id: 3,
-    title: "React-Express JWT Authentication App",
-    description: "Engineered a full-stack authentication system with React frontend and Express backend. Implemented secure login/signup workflows using JWT, CORS handling, and protected API routes, demonstrating expertise in web security practices.",
-    link: "https://express-authentication-client.onrender.com",
-    github: null,
-    deployed: "Deployed on 31st January 2024",
-    tags: ["React", "Express", "cors", "Authentication", "jsonwebtoken"]
+    title: "HTTP Server Implementation using Java",
+    description: "Built a fully functional HTTP server from scratch for the Codecrafters challenge, handling raw requests, routing, static files, headers, and status codes using only core Java libraries.",
+    link: null,
+    github: "https://github.com/SajjaPremsai/codecrafters-http-server-java",
+    deployed: "2024",
+    tags: ["Core Java", "TCP/IP", "Networking", "HTTP"]
   },
   {
     id: 4,
-    title: "CodeGen-Doc-AI (GitHub App)",
-    description: "Designed and deployed a GitHub App that automates code documentation using Python, Flask, and LangGraph. Showcased ability to integrate AI-powered agents with GitHub workflows, improving developer productivity.",
-    link: "https://docai-seven.vercel.app/",
-    github: null,
-    deployed: "Deployed in 2025",
-    tags: ["Python", "Flask", "LangGraph"]
-  },
-  {
-    id: 6,
     title: "Result Analysis Portal",
-    description: "Built a PHP-MySQL based portal to automate student result processing from JNTUK PDFs. Implemented dynamic data visualization for 1000+ records, strengthening skills in database design, server-side scripting, and large-scale data handling.",
+    description: "Designed and developed a portal for Avanthi Institute to parse JNTUK result PDFs, store data in MySQL, and display performance analytics through role-based dashboards for admin, faculty, and students.",
     link: "https://aietta.ac.in/avanthi_portal/",
     github: null,
     deployed: "2023-2024",
-    tags: ["PHP", "MySQL", "XAMPP"]
+    tags: ["PHP", "MySQL", "XAMPP", "PDF Parsing"],
+    contributors: [
+        {
+          name: "Contributor 1",
+        link: "https://www.linkedin.com/in/dharma-raju-gangu-389332109/",
+        image: "https://media.licdn.com/dms/image/v2/C5603AQGtP-cpqY_cCw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1600271665589?e=1779926400&v=beta&t=ydyguZPHdWURfb-A0-BKW5SscPPniI8G9ZPw5by-G94"
+        },
+        {
+          name: "Contributor 2",
+          link: "https://www.linkedin.com/in/lokesh-koyya-658987284/",
+          image: "https://media.licdn.com/dms/image/v2/D5603AQEC2bqvKnJTlw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1726759930908?e=1779926400&v=beta&t=yVqEt4quQ5esdZLVGGewCtGggDbEMT2vyJtqK37v75s"
+        }
+    ]
   },
   {
-    id: 7,
-    title: "Visual Product Search Engine",
-    description: "Implemented a similarity-based product retrieval system using CNN embeddings with TensorFlow and Qdrant vector DB. Gained hands-on experience in computer vision, deep learning, and scalable vector database search systems.",
+    id: 5,
+    title: "Visual Search for Products",
+    description: "Implemented an e-commerce image search feature that finds similar products by comparing uploaded image embeddings with cosine similarity, optimized for jewelry and visual merchandising.",
     link: null,
     github: "https://github.com/SajjaPremsai/Visual-Search-for-Products-",
     deployed: "2024",
-    tags: ["Python", "TensorFlow", "Qdrant"]
-  },
-  {
-    id: 8,
-    title: "Drowsiness Detection System",
-    description: "Developed a real-time driver fatigue detection system using OpenCV and CNN models. Implemented Eye Aspect Ratio (EAR) analysis and automated alert mechanisms, demonstrating practical computer vision application skills.",
-    link: null,
-    github: null,
-    deployed: "2024",
-    tags: ["Python", "OpenCV", "CNN"]
-  },
-  {
-    id: 9,
-    title: "Sentiment Analysis of Restaurant Reviews",
-    description: "Built an NLP pipeline for sentiment classification using TF-IDF feature extraction and SVM classifier. Achieved 85% accuracy, showcasing expertise in text preprocessing, machine learning, and model evaluation techniques.",
-    link: null,
-    github: null,
-    deployed: "2023",
-    tags: ["Python", "scikit-learn", "TF-IDF"]
+    tags: ["React", "MongoDB", "Cosine Similarity", "Computer Vision"],
+    contributors: [
+      {
+        name: "Contributor 1",
+        link: "https://linkedin.com/",
+        image: "https://media.licdn.com/dms/image/v2/D5603AQEC2bqvKnJTlw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1726759930908?e=1779926400&v=beta&t=yVqEt4quQ5esdZLVGGewCtGggDbEMT2vyJtqK37v75s"
+      }
+    ]
   }
 ];
 

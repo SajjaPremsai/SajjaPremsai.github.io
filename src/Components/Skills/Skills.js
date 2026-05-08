@@ -2,6 +2,8 @@ import React from 'react'
 import "./Skills.css"
 import java from "../../assets/Skills/java.svg"
 import python from "../../assets/Skills/python.svg"
+import ai from "../../assets/Skills/ai.svg"
+import github from "../../assets/Skills/github.svg"
 import Card from './Card.js/Card'
 import git from "../../assets/Skills/git.svg"
 import Node from "../../assets/Skills/nodejs.svg"
@@ -20,115 +22,161 @@ import junit5 from "../../assets/Skills/JUnit.svg"
 import scikitlearn from "../../assets/Skills/scikit-learn.svg"
 import javascript from "../../assets/Skills/JavaScript.svg"
 import maven from "../../assets/Skills/Apache Maven.svg"
+import mysql from "../../assets/Skills/MySQL.svg"
+import mongodb from "../../assets/Skills/mongodb.svg"
+import php from "../../assets/Skills/PHP.svg"
+import flask from "../../assets/Skills/flask.svg"
+import fastapi from "../../assets/Skills/FastAPI.svg"
+import mcp from "../../assets/Skills/mcp.svg"
+import mcpinspector from "../../assets/Skills/mcpinspector.svg"
+import typescript from "../../assets/Skills/typescript.png"
+import langchain from "../../assets/Skills/langchain-color.svg"
+import langgraph from "../../assets/Skills/langgraph-color.svg"
 
 
 export default function Skills() {
-    const data = [
-  // Programming Languages
-  {
-    id: 1,
-    title: "Core Java",
-    path: java,
-  },
-  {
-    id: 2,
-    title: "Python",
-    path: python,
-  },
-
-  // Web Development
-  {
-    id: 3,
-    title: "HTML",
-    path: Html,
-  },
-  {
-    id: 4,
-    title: "CSS",
-    path: css,
-  },
-  {
-    id: 5,
-    title: "JavaScript",
-    path: javascript, // ✅ Fixed
-  },
-  {
-    id: 6,
-    title: "React",
-    path: react,
-  },
-  {
-    id: 19,
-    title:"Node",
-    path:Node
-  },
-  {
-    id: 7,
-    title: "Express",
-    path: express,
-  },
-
-  // Frameworks (Java)
-  {
-    id: 8,
-    title: "Spring",
-    path: spring,
-  },
-  {
-    id: 9,
-    title: "Hibernate",
-    path: hibernate,
-  },
-  {
-    id: 10,
-    title: "JUnit5",
-    path: junit5,
-  },
-  {
-    id: 11,
-    title: "Maven", // ✅ Added Maven
-    path: maven,
-  },
-
-  // Tools
-  {
-    id: 12,
-    title: "Git",
-    path: git,
-  },
-  {
-    id: 13,
-    title: "Docker",
-    path: Docker,
-  },
-
-  // Data Science & ML
-  {
-    id: 14,
-    title: "NumPy",
-    path: numpy,
-  },
-  {
-    id: 15,
-    title: "Pandas",
-    path: pandas,
-  },
-  {
-    id: 16,
-    title: "Matplotlib",
-    path: matplotlib,
-  },
-  {
-    id: 17,
-    title: "Scikit-learn",
-    path: scikitlearn,
-  },
-  {
-    id: 18,
-    title: "TensorFlow",
-    path: tensorflow,
-  },
-];
+  const data = [
+    {
+      id: 1,
+      title: "Core Java",
+      path: java,
+    },
+    {
+      id: 2,
+      title: "Python",
+      path: python,
+    },
+    {
+      id: 3,
+      title: "GitHub",
+      path: github,
+    },
+    {
+      id: 4,
+      title: "HTML",
+      path: Html,
+    },
+    {
+      id: 5,
+      title: "CSS",
+      path: css,
+    },
+    {
+      id: 6,
+      title: "JavaScript",
+      path: javascript,
+    },
+    {
+      id: 7,
+      title: "TypeScript",
+      path: typescript,
+    },
+    {
+      id: 8,
+      title: "React",
+      path: react,
+    },
+    {
+      id: 9,
+      title: "Node",
+      path: Node,
+    },
+    {
+      id: 10,
+      title: "Express",
+      path: express,
+    },
+    {
+      id: 11,
+      title: "FastAPI",
+      path: fastapi,
+    },
+    {
+      id: 12,
+      title: "PHP",
+      path: php,
+    },
+    {
+      id: 13,
+      title: "MySQL",
+      path: mysql,
+    },
+    {
+      id: 14,
+      title: "MongoDB",
+      path: mongodb,
+    },
+    {
+      id: 15,
+      title: "Spring",
+      path: spring,
+    },
+    {
+      id: 16,
+      title: "Hibernate",
+      path: hibernate,
+    },
+    {
+      id: 17,
+      title: "JUnit5",
+      path: junit5,
+    },
+    {
+      id: 18,
+      title: "Maven",
+      path: maven,
+    },
+    {
+      id: 19,
+      title: "Git",
+      path: git,
+    },
+    {
+      id: 20,
+      title: "Docker",
+      path: Docker,
+    },
+    {
+      id: 21,
+      title: "MCP",
+      path: mcp,
+    },
+    {
+      id: 22,
+      title: "MCP Inspector",
+      path: mcpinspector,
+    },
+    {
+      id: 23,
+      title: "LangChain",
+      path: langchain,
+    },
+    {
+      id: 24,
+      title: "LangGraph",
+      path: langgraph,
+    },
+    {
+      id: 26,
+      title: "TensorFlow",
+      path: tensorflow,
+    },
+    {
+      id: 28,
+      title: "NumPy",
+      path: numpy,
+    },
+    {
+      id: 29,
+      title: "Pandas",
+      path: pandas,
+    },
+    {
+      id: 30,
+      title: "Matplotlib",
+      path: matplotlib,
+    },
+  ];
 
 
 

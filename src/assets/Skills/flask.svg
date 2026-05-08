@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <path fill="#000" d="M42 12h44v12H42z"/>
+  <path fill="#000" d="M40 24h48v8H40z"/>
+  <path fill="#000" d="M36 32h56v72c0 11-9 20-20 20H56c-11 0-20-9-20-20V32z"/>
+  <path d="M60 72c0-18 12-14 12-32 0-9-4-14-12-14" fill="#fff"/>
+  <path d="M68 88c0 8-4 12-12 12s-12-4-12-12 4-16 12-16 12 8 12 16z" fill="#fff"/>
+</svg>

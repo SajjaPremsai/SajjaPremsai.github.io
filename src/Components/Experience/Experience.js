@@ -11,7 +11,7 @@ export default function Experience() {
   return (
     <section className='Experience reveal' id='Experience'>
         <div className='Experience-Header'>
-            <header>Internships</header>
+            <header>Experience</header>
         </div>
         <div className='Experience-data'>
                  <VerticalTimeline>
@@ -27,9 +27,10 @@ export default function Experience() {
                             >
                               <img src={element.path} alt="Logo" width={element.width} height={element.height}/>
                               <h3 className="vertical-timeline-element-title">{element.Name}</h3>
+                              {element.Position && <h4 className="vertical-timeline-element-subtitle">{element.Position}</h4>}
                               <h4 className="vertical-timeline-element-subtitle">{element.Location}</h4>
                               <p id='description'>{element.description}</p>
-                                <a className="button" href={element.buttonlink} target="_blank" rel="noreferrer"><img src={github} width={20} height={20} alt="GitHub Logo" /> <span>View Project on Github</span></a>
+                              {element.buttonlink && <a className="button" href={element.buttonlink} target="_blank" rel="noreferrer"><img src={github} width={20} height={20} alt="GitHub Logo" /> <span>View Project on Github</span></a>}
                             </VerticalTimelineElement>
                              )
                         })

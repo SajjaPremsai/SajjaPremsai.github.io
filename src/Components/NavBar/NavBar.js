@@ -13,7 +13,7 @@ export default function NavBar() {
         <li className='Items'><a className='Items' href="#Home">Home</a></li>
         <li className='Items'><a className='Items' href='#About'>About</a></li>
         <li className='Items'><a className='Items' href='#Skills'>Skills</a></li>
-        <li className='Items'><a className='Items' href='#Experience'>Internships</a></li>
+        <li className='Items'><a className='Items' href='#Experience'>Experience</a></li>
         <li className='Items'><a className='Items' href='#Certifications'>Certifications</a></li>
         <li className='Items'><a className='Items' href='#Projects'>Projects</a></li>
         <li className='Items'><a className='Items' href='https://sajjapremsai.github.io/blogs/' target="_blank" rel="noopener noreferrer">Blogs</a></li>
