@@ -1,138 +1,184 @@
-.CCard-Container {
-    width: 45%;
-    padding: 20px;
-    display: inline-block;
-    vertical-align: top;
-    transition: transform 0.3s ease;
+.project-card-container {
+  width: 100%;
+  max-width: 360px;
+  transition: transform 0.28s ease;
 }
 
 .project-card {
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background: rgba(255,255,255,0.05);
-    backdrop-filter: blur(10px);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 1.8rem;
+  border-radius: 28px;
+  border: 1px solid rgba(236, 77, 55, 0.18);
+  background: rgba(16, 16, 16, 0.9);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.32);
+  backdrop-filter: blur(18px);
+  overflow: hidden;
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  inset: -50%;
+  background: radial-gradient(circle at top left, rgba(236, 77, 55, 0.16), transparent 18%),
+    radial-gradient(circle at bottom right, rgba(255, 107, 74, 0.12), transparent 14%);
+  pointer-events: none;
 }
 
 .project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.6);
+  transform: translateY(-10px);
+  box-shadow: 0 32px 90px rgba(236, 77, 55, 0.24);
+  border-color: rgba(236, 77, 55, 0.35);
 }
 
-.card-header {
-    font-size: 22px;
-    padding: 15px;
-    color: #EC4D37;
-    font-weight: 600;
-    background: transparent;
-    text-align: center;
+.card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
-.card-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+.card-title {
+  font-size: 1.1rem;
+  line-height: 1.35;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.01em;
 }
 
-.card-text {
-    font-size: 16px;
-    margin-bottom: 20px;
-    text-align: center;
-    color: black;
+.card-badge {
+  align-self: flex-start;
+  background: rgba(236, 77, 55, 0.14);
+  color: #ffb09b;
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
 }
 
-.button-group {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
+.card-description {
+  margin: 0;
+  color: #d8d8d8;
+  font-size: 0.96rem;
+  line-height: 1.85;
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.card-tag {
+  display: inline-flex;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  color: #f8d6c4;
+  background: rgba(236, 77, 55, 0.14);
+  border: 1px solid rgba(236, 77, 55, 0.16);
 }
 
 .contributors-row {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
 }
 
 .contributors-label {
-    color: #777;
-    font-size: 14px;
-    letter-spacing: 0.5px;
+  color: #aaa;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .contributors-list {
-    display: flex;
-    gap: 0;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
 }
 
 .contributor-link {
-    display: inline-flex;
-    border-radius: 50%;
-    overflow: hidden;
-    width: 44px;
-    height: 44px;
-    border: 3px solid rgba(255,255,255,0.9);
-    transition: transform 0.2s ease, box-shadow 0.2s ease, z-index 0.2s ease;
-    margin-left: -12px;
-    position: relative;
-    z-index: 1;
-}
-
-.contributor-link:first-child {
-    margin-left: 0;
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
 .contributor-link:hover {
-    transform: translateY(-4px) scale(1.1);
-    box-shadow: 0 4px 12px rgba(236, 77, 55, 0.4);
-    z-index: 10;
-    border-color: #EC4D37;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 22px rgba(236, 77, 55, 0.28);
+  border-color: #ec4d37;
 }
 
 .contributor-avatar {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.live-demo-button, .github-button {
-    font-size: 16px;
-    padding: 10px 20px;
-    border-radius: 25px;
-    border: none;
-    color: #fff;
-    transition: transform 0.2s ease, background 0.3s ease;
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.action-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-width: 130px;
+  padding: 0.85rem 1.3rem;
+  border-radius: 999px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.25s ease;
+}
+
+.action-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 30px rgba(0, 0, 0, 0.18);
 }
 
 .live-demo-button {
-    background: linear-gradient(90deg, #EC4D37, #FF6B4A);
-}
-
-.live-demo-button:hover {
-    background: linear-gradient(90deg, #FF6B4A, #EC4D37);
-    transform: scale(1.05);
+  background: linear-gradient(135deg, #ec4d37, #ff804d);
 }
 
 .github-button {
-    background: #24292F;
+  background: rgba(36, 41, 47, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.github-button:hover {
-    background: #3b4045;
-    transform: scale(1.05);
+@media (max-width: 768px) {
+  .project-card-container {
+    max-width: 100%;
+  }
+
+  .card-top {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
 }
 
-.card-footer {
-    padding: 10px;
-    text-align: center;
-    color: #ccc;
-    background: transparent;
-    font-size: 14px;
+@media (max-width: 480px) {
+  .project-card {
+    padding: 1.4rem;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .action-button {
+    width: 100%;
+  }
 }

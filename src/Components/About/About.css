@@ -15,20 +15,26 @@
 }
 
 .About-Des {
-    width: 80%;
-    padding: 20px;
-    font-size: 24px;
+    width: 75%;
+    max-width: 900px;
+    padding: 24px;
+    font-size: 22px;
+    color: #e4e4e4;
     text-align: center;
+    border-radius: 24px;
+    border: 1px solid rgba(236, 77, 55, 0.16);
+    background: rgba(16, 16, 16, 0.7);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.28);
 }
 
 .Title {
     padding: 10px;
     color: #EC4D37;
-    font-size: 50px;
+    font-size: 52px;
 }
 
 .Education-data{
-    color: black;
+    color: #f0f0f0;
 }
 
 h3{
@@ -36,16 +42,28 @@ h3{
 }
 
 .vertical-timeline-element-content{
-    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.1) !important;
-    padding: 2em 3em !important;
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.35) !important;
+    padding: 2em 2.4em !important;
+    background: rgba(22, 22, 22, 0.94) !important;
+    border: 1px solid rgba(236, 77, 55, 0.18) !important;
+    color: #d9d9d9;
 }
 
 .vertical-timeline-element-title{
     color:#EC4D37;
 }
 
+.vertical-timeline-element-subtitle {
+    color: #d7d7d7;
+}
+
 .date{
-    color:#EC4D37;
+    color:#ffb09b;
+}
+
+.vertical-timeline-element-icon {
+    box-shadow: 0 0 0 4px rgba(236, 77, 55, 0.16) !important;
+    background: radial-gradient(circle at top left, rgba(236, 77, 55, 0.95), rgba(255, 107, 74, 0.85)) !important;
 }
 
 #description{

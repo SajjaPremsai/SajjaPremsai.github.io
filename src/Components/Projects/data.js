@@ -5,7 +5,7 @@ const projects = [
     description: "Built a GitHub App that automates documentation work by analyzing code changes, generating README updates and inline comments, then opening PRs with the suggested docs. This helps engineering teams keep repos documented without manual overhead.",
     link: "https://docai-seven.vercel.app/",
     github: null,
-    deployed: "Sep 2025 – Nov 2025",
+    deployed: "2025",
     tags: ["Artificial Intelligence", "GitHub", "Python", "Flask"]
   },
   {

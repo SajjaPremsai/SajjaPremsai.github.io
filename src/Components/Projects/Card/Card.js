@@ -1,60 +1,67 @@
 import React from 'react';
-import '@coreui/coreui/dist/css/coreui.min.css';
 import "./Card.css";
-import { CCard, CCardHeader, CCardBody, CCardText, CCardFooter, CButton } from '@coreui/react';
 import { FaGithub } from 'react-icons/fa';
 
 export default function Card({ element }) {
   return (
-    <div className='CCard-Container'>
-      <CCard className="project-card">
-        <CCardHeader className="card-header">{element.title}</CCardHeader>
-        <CCardBody className="card-body">
-          <CCardText className="card-text">{element.description}</CCardText>
-          {element.contributors && element.contributors.length > 0 && (
-            <div className="contributors-row">
-              <span className="contributors-label">Other contributors</span>
-              <div className="contributors-list">
-                {element.contributors.map((contributor, index) => (
-                  <a
-                    key={index}
-                    href={contributor.link}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="contributor-link"
-                  >
-                    <img src={contributor.image} alt={contributor.name} className="contributor-avatar" />
-                  </a>
-                ))}
-              </div>
+    <div className='project-card-container'>
+      <div className="project-card">
+        <div className="card-top">
+          <div className="card-title">{element.title}</div>
+          <span className="card-badge">{element.deployed}</span>
+        </div>
+
+        <p className="card-description">{element.description}</p>
+
+        <div className="tag-row">
+          {element.tags?.map((tag, index) => (
+            <span key={index} className="card-tag">{tag}</span>
+          ))}
+        </div>
+
+        {element.contributors && element.contributors.length > 0 && (
+          <div className="contributors-row">
+            <div className="contributors-label">Collaborators</div>
+            <div className="contributors-list">
+              {element.contributors.map((contributor, index) => (
+                <a
+                  key={index}
+                  href={contributor.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="contributor-link"
+                >
+                  <img src={contributor.image} alt={contributor.name} className="contributor-avatar" />
+                </a>
+              ))}
             </div>
-          )}
-          <div className="button-group">
-            {element.link && (
-              <CButton 
-                href={element.link} 
-                target='_blank' 
-                className="live-demo-button"
-              >
-                Live Demo
-              </CButton>
-            )}
-            {element.github && (
-              <CButton 
-                href={element.github} 
-                target='_blank' 
-                className="github-button"
-              >
-                <FaGithub size={18} style={{ marginRight: "8px" }} />
-                GitHub
-              </CButton>
-            )}
           </div>
-        </CCardBody>
-        <CCardFooter className="card-footer">
-          {element.deployed}
-        </CCardFooter>
-      </CCard>
+        )}
+
+        <div className="button-group">
+          {element.link && (
+            <a
+              href={element.link}
+              target='_blank'
+              rel='noreferrer'
+              className='action-button live-demo-button'
+            >
+              Live Demo
+            </a>
+          )}
+          {element.github && (
+            <a
+              href={element.github}
+              target='_blank'
+              rel='noreferrer'
+              className='action-button github-button'
+            >
+              <FaGithub size={16} />
+              GitHub
+            </a>
+          )}
+        </div>
+      </div>
     </div>
-  )
+  );
 }

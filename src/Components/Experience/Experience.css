@@ -15,7 +15,7 @@
 }
 
 .Experience-data {
-    color: black;
+    color: #f2f2f2;
 }
 
 h3 {
@@ -23,20 +23,56 @@ h3 {
 }
 
 .vertical-timeline-element-content {
-    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1) !important;
-    padding: 2em 3em !important;
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.36) !important;
+    padding: 2em 2.4em !important;
+    background: rgba(18, 18, 18, 0.93) !important;
+    border: 1px solid rgba(236, 77, 55, 0.18) !important;
+    color: #ddd;
 }
 
 .vertical-timeline-element-title {
     color: #EC4D37;
 }
 
+.vertical-timeline-element-subtitle {
+    color: #d6d6d6;
+}
+
 .date {
-    color: #EC4D37;
+    color: #ffb09b;
 }
 
 #description {
     margin: 1.5em 0 2em 0;
+}
+
+.vertical-timeline-element-icon {
+    box-shadow: 0 0 0 4px rgba(236, 77, 55, 0.16) !important;
+    background: radial-gradient(circle at top left, rgba(236, 77, 55, 0.95), rgba(255, 107, 74, 0.85)) !important;
+}
+
+.button {
+    text-decoration: none;
+    padding: 0.65em 1.1em;
+    border-radius: 999px;
+    color: #ffffff;
+    background: linear-gradient(135deg, #ec4d37, #ff7943);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+    box-shadow: 0 18px 35px rgba(236, 77, 55, 0.16);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 22px 44px rgba(236, 77, 55, 0.22);
+}
+
+.button img {
+    margin-right: 0.4em;
+    vertical-align: top;
 }
 
 .reveal {
