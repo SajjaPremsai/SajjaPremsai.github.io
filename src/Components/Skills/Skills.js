@@ -2,7 +2,7 @@ import React from 'react'
 import "./Skills.css"
 import java from "../../assets/Skills/java.svg"
 import python from "../../assets/Skills/python.svg"
-import ai from "../../assets/Skills/ai.svg"
+// import ai from "../../assets/Skills/ai.svg"
 import github from "../../assets/Skills/github.svg"
 import Card from './Card.js/Card'
 import git from "../../assets/Skills/git.svg"
@@ -19,13 +19,13 @@ import express from "../../assets/Skills/expressjs.svg"
 import hibernate from "../../assets/Skills/Hibernate.svg"
 import spring from "../../assets/Skills/Spring.svg"
 import junit5 from "../../assets/Skills/JUnit.svg"
-import scikitlearn from "../../assets/Skills/scikit-learn.svg"
+// import scikitlearn from "../../assets/Skills/scikit-learn.svg"
 import javascript from "../../assets/Skills/JavaScript.svg"
 import maven from "../../assets/Skills/Apache Maven.svg"
 import mysql from "../../assets/Skills/MySQL.svg"
-import mongodb from "../../assets/Skills/mongodb.svg"
+// import mongodb from "../../assets/Skills/mongodb.svg"
 import php from "../../assets/Skills/PHP.svg"
-import flask from "../../assets/Skills/flask.svg"
+// import flask from "../../assets/Skills/flask.svg"
 import fastapi from "../../assets/Skills/FastAPI.svg"
 import mcp from "../../assets/Skills/mcp.svg"
 import mcpinspector from "../../assets/Skills/mcpinspector.svg"
@@ -100,11 +100,6 @@ export default function Skills() {
       id: 13,
       title: "MySQL",
       path: mysql,
-    },
-    {
-      id: 14,
-      title: "MongoDB",
-      path: mongodb,
     },
     {
       id: 15,

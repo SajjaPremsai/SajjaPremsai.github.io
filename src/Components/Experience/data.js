@@ -1,4 +1,4 @@
-import indianserver from "./IndianServers.jpeg"
+// import indianserver from "./IndianServers.jpeg"
 import amex from "../../assets/companies/amex.png"
 const timelineElements=[
     {
